@@ -1,0 +1,16 @@
+from PIL import Image
+img = Image.open("leon.jpg")
+#img.show()
+#print(image.mode)
+#img=img.convert("L")
+#img=save("leon2.jpg")
+#img=img.rotate(-90)
+#img.show()
+#print(img.size)
+#print(img.width)
+#print(img.height)
+img=img.resize((300,300))
+box = (100,100,250,250)
+img = img.crop(box)
+img.show()
+      
